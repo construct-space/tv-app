@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@import "@construct-space/ui/style.css";
+
+:root {
+  /* Construct vs-dark + coral mark accent (overridden by applyTheme if used) */
+  --c-bg: #1e1e1e; --c-fg: #d4d4d4; --c-muted: #6b7280;
+  --c-accent: #FF2D55; --c-accent-fg: #fff;
+  --c-border: #343434; --c-surface: #282828; --c-card: #2c2c2c; --c-input: #363636;
+  /* app-token aliases used by @construct-space/ui */
+  --app-background: var(--c-bg); --app-foreground: var(--c-fg); --app-muted: var(--c-muted);
+  --app-accent: var(--c-accent); --app-accent-fg: var(--c-accent-fg);
+  --app-border: var(--c-border); --app-surface: var(--c-surface); --app-card: var(--c-card); --app-input-bg: var(--c-input);
+}
+* { box-sizing: border-box; margin: 0; }
+html, body, #app { height: 100%; }
+body { background: var(--c-bg); color: var(--c-fg); font-family: "Rubik", system-ui, sans-serif; overflow: hidden; }
